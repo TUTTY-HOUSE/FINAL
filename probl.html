@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zero Hunger</title>
+    <link rel="stylesheet" href="prob.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+</head>
+<body>
+
+    <!-- HEADER / NAVBAR -->
+    <header>
+        <div class="header-inner">
+            <a href="index.html" class="logo">Sustainable Food for Everyday Life</a>
+            <nav class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="intro.html">Introduction</a>
+                <a href="probl.html">Problems</a>
+                <a href="#">Objectives</a>
+                <a href="#">About Us</a>
+            </nav>
+            <div class="search-bar">
+                <input type="text" placeholder="Search content..." />
+            </div>
+            <button class="hamburger">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- CAROUSEL -->
+    <div id="carouselExampleInterval" class="carousel slide mt-5" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="5000">
+                <img src="https://files01.pna.gov.ph/ograph/2024/11/01/thumbsbc71e56cd4a521b39d203037698fee9ec5.jpg" class="d-block w-100" alt="Slide 1">
+            </div>
+            <div class="carousel-item" data-bs-interval="5000">
+                <img src="https://ideafinderjxv.wordpress.com/wp-content/uploads/2017/03/mal-1.png" class="d-block w-100" alt="Slide 2">
+            </div>
+            <div class="carousel-item" data-bs-interval="5000">
+                <img src="https://images.indianexpress.com/2018/09/global-hunger-759.jpg" class="d-block w-100" alt="Slide 3">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <!-- PROBLEMS SECTION -->
+    <section class="problem-section">
+        <div class="container my-5">
+            <h1>Problems Related to Zero Hunger</h1>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="card h-100">
+                        <img src="hunger.jpg" class="card-img-top" alt="Chronic Hunger">
+                        <div class="card-body">
+                            <h3 class="card-title">Chronic Hunger</h3>
+                            <p>9% of the world's population is chronically undernourished.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card h-100">
+                        <img src="food_waste.jpg" class="card-img-top" alt="Food Waste">
+                        <div class="card-body">
+                            <h3 class="card-title">Food Loss and Waste</h3>
+                            <p>Over 30% of global food is lost or wasted, affecting people and the environment.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card h-100">
+                        <img src="small_farmers.jpg" class="card-img-top" alt="Small-Scale Farmers">
+                        <div class="card-body">
+                            <h3 class="card-title">Challenges for Small Farmers</h3>
+                            <p>Small-scale farmers produce 70% of the world’s food but face limited resources.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- JS for Mobile Hamburger -->
+    <script>
+        const hamburger = document.querySelector('.hamburger');
+        const navLinks = document.querySelector('.nav-links');
+
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('show');
+        });
+    </script>
+</body>
+</html>
